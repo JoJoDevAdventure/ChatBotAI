@@ -18,6 +18,8 @@
 		A3DB30482951E7D700D143E1 /* ChatBotAIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DB30472951E7D700D143E1 /* ChatBotAIUITests.swift */; };
 		A3DB304A2951E7D700D143E1 /* ChatBotAIUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DB30492951E7D700D143E1 /* ChatBotAIUITestsLaunchTests.swift */; };
 		A3DB30582951E88200D143E1 /* OpenAI in Frameworks */ = {isa = PBXBuildFile; productRef = A3DB30572951E88200D143E1 /* OpenAI */; };
+		A3DB305A2951ECC200D143E1 /* APICaller.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DB30592951ECC200D143E1 /* APICaller.swift */; };
+		A3DB305D2951ED6600D143E1 /* OpenAISwift in Frameworks */ = {isa = PBXBuildFile; productRef = A3DB305C2951ED6600D143E1 /* OpenAISwift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +54,7 @@
 		A3DB30432951E7D700D143E1 /* ChatBotAIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChatBotAIUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3DB30472951E7D700D143E1 /* ChatBotAIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatBotAIUITests.swift; sourceTree = "<group>"; };
 		A3DB30492951E7D700D143E1 /* ChatBotAIUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatBotAIUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		A3DB30592951ECC200D143E1 /* APICaller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APICaller.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A3DB305D2951ED6600D143E1 /* OpenAISwift in Frameworks */,
 				A3DB30582951E88200D143E1 /* OpenAI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -111,6 +115,7 @@
 				A3DB30312951E7D700D143E1 /* LaunchScreen.storyboard */,
 				A3DB30342951E7D700D143E1 /* Info.plist */,
 				A3DB302C2951E7D500D143E1 /* ChatBotAI.xcdatamodeld */,
+				A3DB30592951ECC200D143E1 /* APICaller.swift */,
 			);
 			path = ChatBotAI;
 			sourceTree = "<group>";
@@ -150,6 +155,7 @@
 			name = ChatBotAI;
 			packageProductDependencies = (
 				A3DB30572951E88200D143E1 /* OpenAI */,
+				A3DB305C2951ED6600D143E1 /* OpenAISwift */,
 			);
 			productName = ChatBotAI;
 			productReference = A3DB30202951E7D500D143E1 /* ChatBotAI.app */;
@@ -225,6 +231,7 @@
 			mainGroup = A3DB30172951E7D500D143E1;
 			packageReferences = (
 				A3DB30562951E88200D143E1 /* XCRemoteSwiftPackageReference "OpenAI" */,
+				A3DB305B2951ED6600D143E1 /* XCRemoteSwiftPackageReference "OpenAISwift" */,
 			);
 			productRefGroup = A3DB30212951E7D500D143E1 /* Products */;
 			projectDirPath = "";
@@ -272,6 +279,7 @@
 				A3DB30282951E7D500D143E1 /* ViewController.swift in Sources */,
 				A3DB302E2951E7D500D143E1 /* ChatBotAI.xcdatamodeld in Sources */,
 				A3DB30242951E7D500D143E1 /* AppDelegate.swift in Sources */,
+				A3DB305A2951ECC200D143E1 /* APICaller.swift in Sources */,
 				A3DB30262951E7D500D143E1 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -624,6 +632,14 @@
 				minimumVersion = 0.1.3;
 			};
 		};
+		A3DB305B2951ED6600D143E1 /* XCRemoteSwiftPackageReference "OpenAISwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/adamrushy/OpenAISwift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -631,6 +647,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = A3DB30562951E88200D143E1 /* XCRemoteSwiftPackageReference "OpenAI" */;
 			productName = OpenAI;
+		};
+		A3DB305C2951ED6600D143E1 /* OpenAISwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A3DB305B2951ED6600D143E1 /* XCRemoteSwiftPackageReference "OpenAISwift" */;
+			productName = OpenAISwift;
 		};
 /* End XCSwiftPackageProductDependency section */
 
